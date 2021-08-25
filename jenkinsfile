@@ -1,11 +1,10 @@
 pipeline {
-  stage('Clone') {
-  	step{
-      sh 'mkdir -p build'
-      echo 'Cloning files from (branch: "' + main + '" )'
-      dir('build') {
+ 	 stage('Clone') {
+  		step{
+      	sh 'mkdir -p build'
+      	dir('build') {
           git branch: 'main' , url: "https://github.com/fhfelipefh/Calculator-App.git"
-      }     
-  }     
-}
+      		}     
+  		}     
+	}
 }
