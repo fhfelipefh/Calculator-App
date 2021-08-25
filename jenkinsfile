@@ -1,6 +1,5 @@
 pipeline {
 	agent any
-	stages{
 		stage('Clone') {
   		step{
     	  	sh 'mkdir -p build'
@@ -9,5 +8,4 @@ pipeline {
       		}     
   		}     
 	}	
-  }
 }
