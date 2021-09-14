@@ -48,7 +48,7 @@ tasks.withType(Test) {
     }
 }
 
-task uberJar(type: Jar){
+task uber2Jar(type: Jar){
     manifest.attributes(['Main-Class': 'com.fhfelipefh.cloud.tema8.Main'])
 
     duplicatesStrategy = 'include'
